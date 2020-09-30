@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Picco Cabs</title>
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <div class="form-container">
+      <div class="form-content">
+        <form method="POST" class="form" id="contact-form">
+          <div class="form-selector-component">
+            <button class="nobuttonoutline">Outstations</button>
+            <button class="nobuttonoutline">Rentals</button>
+          </div>
+          <div class="form-inputs1">
+            <div class="rbgroup-grouper">
+              <div class="rbgroup">
+                <input
+                  type="radio"
+                  name="way"
+                  class="rb"
+                  value="One-way"
+                  required
+                />
+                One-way
+              </div>
+              <div class="rbgroup">
+                <input
+                  type="radio"
+                  name="way"
+                  value="Two-way"
+                  class="rb"
+                  required
+                />
+                Two-way
+              </div>
+            </div>
+            <div class="form-inputs">
+              <label class="form-label">Name </label>
+              <input
+                class="form-input mb"
+                id="name"
+                type="text"
+                name="name"
+                placeholder="Enter your Name"
+                required
+              />
+            </div>
+            <div class="form-inputs">
+              <label class="form-label">From </label>
+              <input
+                class="form-input mb"
+                id="from"
+                type="text"
+                name="from"
+                placeholder="Enter your Pickup Point"
+                required
+              />
+            </div>
+          </div>
+          <div class="form-inputs">
+            <label class="form-label">To </label>
+            <input
+              class="form-input mb"
+              type="text"
+              name="to"
+              id="to"
+              placeholder="Enter your Drop Point"
+              required
+            />
+          </div>
+          <div class="form-inputs">
+            <label class="form-label">Date</label>
+            <input
+              class="form-input mb"
+              type="date"
+              name="date"
+              id="date"
+              placeholder="Enter the date"
+              required
+            />
+          </div>
+          <div class="form-inputs">
+            <label class="form-label">Ph.no </label>
+            <input
+              class="form-input mb"
+              type="number"
+              id="number"
+              name="phno"
+              placeholder="Enter your phone number"
+              required
+            />
+          </div>
+          <button class="form-input-btn" type="submit">Book</button>
+        </form>
+      </div>
+    </div>
+    <script src="script.js"></script>
+    <script src="https://smtpjs.com/v3/smtp.js"></script>
+  </body>
+</html>
