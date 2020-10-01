@@ -210,6 +210,7 @@
   .form-label {
     font-size: 1rem;
   }
+
   .form-selector-component {
     display: grid;
     grid-template-columns: repeat(2, 1fr);
@@ -247,11 +248,17 @@
     font-weight: 500;
     transition: all 0.4s ease-out;
   }
-}
-* {
-  box-sizing: border-box;
-  padding: 0;
-  margin: 0;
+  .d-flex1 {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+  }
+  .package-selector {
+    width: 100%;
+    background-color: #ebebeb;
+    border: none;
+    height: 41px;
+    outline: none;
+  }
 }
 
 body {
